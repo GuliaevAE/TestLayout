@@ -5,14 +5,14 @@
 }
 
 .back {
-    background: #E5E5E5;
+    background: #efefef;
     overflow: auto;
 }
 
-/* .e {
+.e {
     background: red;
     border: 2px solid black;
-} */
+}
 
 .none {
     display: none;
@@ -22,9 +22,9 @@
     background: url(/images/logo.svg) no-repeat;
 
 }
+
 .logoWhite {
     background: url(/images/logoWhite.svg) no-repeat;
-
 }
 
 .Garamond {
@@ -35,10 +35,19 @@
     font-family: Lato
 }
 
-.socialPNG {
-    display: block;
-
+.menuWindow{
+    display: flex;
+         flex-direction: column;
+         align-items:center;
+         position: fixed ;
+         background:rgba(216, 191, 169, 1);
+         width:100%; 
+         left: 0; 
+         top: 0;
+         padding-top: 20px;
+         padding-bottom: 20px; 
 }
+
 
 .oreol {
     width: 40px;
@@ -72,31 +81,267 @@
     right: 0;
 }
 
-@media (max-width: 1200px) {
-    .vector1{
-        display:none
-    }
-    .vector2{
-        display:none
-    }
-    
-
-}
-.incognitoReverse{
-    display:none
+.incognitoReverse {
+    display: none
 }
 
+#window {
+    position: fixed;
+    background: #F6F6F5;
+    width: 746px;
+    height: 518px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
+#order {
+    background: rgba(105, 118, 109, 1);
+    height: 50px;
+    width: 150px;
+    margin-top: 50px;
+}
+
+.titleText{
+    padding-top: 36px;
+}
+
+
+.oreolWithStars {
+    background: url(/images/oreolWithStars.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 20%;
+    top: 0;
+    width: 200px;
+    height: 100%
+}
+
+.aplicationText {
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.SubmitApplication {
+    background: #69766D;
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    bottom: 150px;
+    right: 50%;
+    margin-right: -75px;
+}
+
+
+
+@media (max-width: 570px) {
+    #window {
+        width: 500px;
+    }
+
+    .SubmitApplication {
+        bottom: 125px;
+    }
+    .aplicationText input {
+        width: 80%;
+        
+    }
+}
+
+
+
+@media (min-width: 800px) {
+    .tel {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .aplicationText input {
+        width: 85%;
+        
+    }
+}
 
 @media (max-width: 800px) {
-    .incognitoReverse{
-        display:block
+    .incognitoReverse {
+        display: block
     }
-    .incognito{
-        display:none
+
+    .incognito {
+        display: none
     }
-    .textIncognito{
+
+    .textIncognito {
         text-align: center;
     }
 
+    .socialLinks {
+        display: none;
+    }
+
+    .col span {
+        font-size: 2em;
+    }
+
+    #order {
+        position: relative;
+        left: 50%;
+        margin-left: -75px;
+    }
+
+    .tel {
+        display: none;
+    }
+
+    .actions .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    #window {
+
+        width: 606px;
+        height: 512px;
+
+    }
+
+    .aplicationText input {
+        width: 80%;
+        
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .vector1 {
+        display: none
+    }
+
+    .vector2 {
+        display: none
+    }
+
+    .aplicationText input {
+        width: 80%;
+        
+    }
+}
+
+@media (max-width: 320px) {
+    .incognitoTel {
+        display: none;
+    }
+
+    .tel {
+        display: block;
+        position: block;
+    }
+
+    .actions {
+        margin-left: 50px;
+        margin-right: 50px;
+        align-items: center
+    }
+
+    #window {
+
+        transform: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+
+        width: 100%;
+        left: 0;
+        top: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .aplicationText {
+        margin-left: 15px;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .aplicationText h6 {
+        font-size: 10px;
+    }
+
+    .aplicationText input {
+        width: 100%;
+        
+    }
+
+    #window h1 {
+        font-size: 25px;
+    }
+
+    .oreolWithStars {
+        background-size: contain;
+        position: absolute;
+        left: -20%;
+        top: 0;
+        width: 100px;
+        height: 100%
+    }
+
+    .titleText{
+        padding-top: 25px;
+    }
+}
+
+
+
+.Twitter {
+    opacity: 0.5;
+}
+
+
+.Twitter:hover {
+    opacity: 1;
+}
+
+.P {
+    opacity: 0.5;
+}
+
+.P:hover {
+    opacity: 1;
+}
+
+.Facebook {
+    opacity: 0.5;
+}
+
+.Facebook:hover {
+    opacity: 1;
+}
+
+.Youtube {
+    opacity: 0.5;
+}
+
+.Youtube:hover {
+    opacity: 1;
+}
+
+
+.socialLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.socialLinks>div {
+    margin-top: 20px;
+}
+
+
+.col span {
+    font-size: 3em;
 }
